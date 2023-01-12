@@ -4,12 +4,16 @@ import Package_Car.UtilityVehicle;
 import Package_Car.Truck;
 
 
+import Package_IntList.IntArrayList;
+import Package_IntList.IntList;
+import Package_IntList.IntVector;
 import Package_Video.TvSeries;
 import Package_Video.Video;
 import Package_Video.Movie;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Arrays;
 import java.util.logging.SocketHandler;
 
 public class Main {
@@ -37,6 +41,19 @@ public class Main {
 
         System.out.println(video1.toString());
         System.out.println(video2.toString());
+
+        IntArrayList list=new IntArrayList();
+        IntVector list2= new IntVector();
+
+
+        for(int i = 0 ; i < 11; i++){
+            list.addNumber(i);
+            list2.addNumber(i);
+
+        }
+        System.out.println(Arrays.toString(list.getNumbers()));
+        System.out.println(Arrays.toString(list2.getNumbers()));
+
 
 
 
