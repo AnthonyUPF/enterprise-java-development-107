@@ -1,4 +1,10 @@
-import Package_Car.Car;
+package Package_Car;
 
 public class Sedan extends Car {
+    public Sedan(int vinNumber, String make, String model, int mileage) {
+        super(vinNumber, make, model, mileage);
+    }
+
+
+
 }
